@@ -21,7 +21,7 @@ try:
     if length < 4:
         print('Length of password should be atleast 4 for security concerns.')
     else :
-        print('Generated Password is: ', generate_password(length))
+        print('Generated Password is:', generate_password(length))
 
 except ValueError:
     print('Invalid Input!! Enter only numeric value.')
