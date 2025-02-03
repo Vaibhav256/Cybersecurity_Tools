@@ -21,7 +21,7 @@ Ensure you have Python 3.x installed. The script uses the following libraries:
 ## Installation:
 1. Clone this repository:
 
-    git clone https://github.com/Vaibhav256/Cybersecurity_Tools/lan-portscanner
+    git clone https://github.com/Vaibhav256/Cybersecurity_Tools/tree/main/lan-portscanner
 
 2. Install the required dependencies by running:
     

@@ -13,7 +13,7 @@ Ensure you have Python 3.x installed.
 ## Installation:
 1. Clone this repository:
 
-    git clone https://github.com/Vaibhav256/Cybersecurity_Tools/password-generator
+    git clone https://github.com/Vaibhav256/Cybersecurity_Tools/tree/main/password-generator
 
 2. No external dependencies are required for this project.
 

@@ -1,6 +1,6 @@
-# Local_Backdoor_Access
+# Local Backdoor Access
 
-The **Local_Backdoor_Access** project is a simple yet powerful toolset for remote command execution and file transfer between a client and a server using Python.
+The **Local Backdoor Access** project is a simple yet powerful toolset for remote command execution and file transfer between a client and a server using Python.
 This tool enables a backdoor connection between a client and a server, allowing remote command execution, file uploads, and downloads over a socket connection.
 
 > **Note:** This tool should only be used in ethical penetration testing scenarios or with explicit permission. Unauthorized use is illegal.
@@ -29,7 +29,7 @@ This tool enables a backdoor connection between a client and a server, allowing 
 
 1. Clone the repository:
    
-   git clone https://github.com/Vaibhav256/Cybersecurity_Tools/local-backdoor-access
+   git clone https://github.com/Vaibhav256/Cybersecurity_Tools/tree/main/local-backdoor-access
 
 2. Change to directory:
 
@@ -39,8 +39,8 @@ This tool enables a backdoor connection between a client and a server, allowing 
 
     nano server.py
 
-4. Edit the ip address and port number according to your network: [Enter the Server's ip address and port]
-    *(not a command)*
+4. Edit the ip address and port number according to your network: [Enter the Server's ip address and port]  
+    *(not a command)*  
     make changes in the line no. 57 --> default: sock.bind(('0.0.0.0', 5555))
 
 5. Run the Server:
@@ -57,14 +57,14 @@ This tool enables a backdoor connection between a client and a server, allowing 
 
     nano backdoor.py
 
-3. Edit the ip address and port number according to your network: [Enter the Server's ip address and port]
-    *(not a command)*
+3. Edit the ip address and port number according to your network: [Enter the Server's ip address and port]  
+    *(not a command)*  
     make changes in the line no. 24 --> default: sock1.connect(('0.0.0.0', 5555))
 
-4. Run the Backdoor or make it execute.
-    *if your are checking a demo on your own another device then you may run it like:*
-        python backdoor.py 
-    *you must have backdoor.py file and python installed on that device*
+4. Run the Backdoor or make it execute.  
+    *if your are checking a demo on your own another device then you may run it like:*  
+        python backdoor.py  
+    *you must have backdoor.py file and python installed on that device*  
     *OR you can convert py to executable then python is not necessary to be installed on that device.*
 
 ### Commands to use (After connection)
