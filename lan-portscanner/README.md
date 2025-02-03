@@ -41,5 +41,5 @@ Ensure you have Python 3.x installed. The script uses the following libraries:
 
 ### Example:
 
-'[*]' Enter Targets to Scan (split them by commas): 192.168.0.1,192.168.0.2  
-'[*]' Enter the number of ports to scan: 1024
+[\*] Enter Targets to Scan (split them by commas): 192.168.0.1,192.168.0.2  
+[\*] Enter the number of ports to scan: 1024
