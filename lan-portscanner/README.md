@@ -31,6 +31,9 @@ Ensure you have Python 3.x installed. The script uses the following libraries:
 ## Usage:
 ### To run the port scanner:
 1. Open a terminal and navigate to the directory containing the script.
+
+    cd /path to/lan-portscanner
+
 2. Run the following command:
     
     python lan_portscanner.py
@@ -38,5 +41,5 @@ Ensure you have Python 3.x installed. The script uses the following libraries:
 
 ### Example:
 
-[*] Enter Targets to Scan (split them by commas): 192.168.0.1,192.168.0.2
-[*] Enter the number of ports to scan: 1024
+'[*]' Enter Targets to Scan (split them by commas): 192.168.0.1,192.168.0.2  
+'[*]' Enter the number of ports to scan: 1024
