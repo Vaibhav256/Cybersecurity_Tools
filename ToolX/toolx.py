@@ -22,18 +22,21 @@ def show_menu():
     print("2. Hash Cracker")
     print("3. LAN Port Scanner")
     print("4. Password Generator")
-    print("5. Exit")
+    print("5. SSL Certificate Checker")
+    print("6. Exit")
 
 def run_tool(choice):
     if choice == '1':
-        os.system("python email-scraper/email_scraper.py")
+        os.system("python ToolX/email-scraper/email_scraper.py")
     elif choice == '2':
-        os.system("python hash-cracker/hash_cracker.py")
+        os.system("python ToolX/hash-cracker/hash_cracker.py")
     elif choice == '3':
-        os.system("python lan-portscanner/lan_portscanner.py")
+        os.system("python ToolX/lan-portscanner/lan_portscanner.py")
     elif choice == '4':
-        os.system("python password-generator/password_generator.py")
+        os.system("python ToolX/password-generator/password_generator.py")
     elif choice == '5':
+        os.system("python ToolX/SSL-certificate-checker/checker.py")
+    elif choice == '6':
         print("\n[!] Exiting... Stay secure....")
         time.sleep(1)
         exit()
