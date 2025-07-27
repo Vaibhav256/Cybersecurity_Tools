@@ -1,13 +1,13 @@
-# 🛡️ Cybersecurity Tools by Vaibhav256
+#  Cybersecurity Tools by Vaibhav256
 
 Welcome to the **Cybersecurity_Tools** repository!  
 This repo contains a growing collection of Python-based cybersecurity tools developed for ethical hacking, testing, and learning purposes.
 
 ---
 
-## 🧰 Repositories & Tools
+##  Repositories & Tools
 
-### 🔹 ToolX Cyber Suite (`/ToolX/`)
+###  ToolX Cyber Suite (`/ToolX/`)
 
 A bundled multi-tool suite with an interactive menu that allows users to access various tools from one place.
 
@@ -20,7 +20,7 @@ A bundled multi-tool suite with an interactive menu that allows users to access 
 
 ---
 
-### 🔹 Local Backdoor Access (`/local-backdoor-access/`)
+### Local Backdoor Access (`/local-backdoor-access/`)
 
 A separate client-server tool for establishing basic remote access (simulated ethical backdoor).
 
@@ -31,22 +31,23 @@ A separate client-server tool for establishing basic remote access (simulated et
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone this repository:
 ```bash
 git clone https://github.com/Vaibhav256/Cybersecurity_Tools.git
 cd Cybersecurity_Tools
+```
 
 ---
 
-# Future Additions
+## Future Additions
 
 I plan to keep adding more tools related to cybersecurity, so stay tuned for more features!
 
 ---
 
-# Usage Instructions
+## Usage Instructions
 
 For each tool, navigate to the respective folder and refer to the individual README files for usage instructions and setup.
 
