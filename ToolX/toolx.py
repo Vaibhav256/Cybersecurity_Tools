@@ -21,9 +21,8 @@ def show_menu():
     print("1. Email Scraper")
     print("2. Hash Cracker")
     print("3. LAN Port Scanner")
-    print("4. Local Backdoor Access")
-    print("5. Password Generator")
-    print("6. Exit")
+    print("4. Password Generator")
+    print("5. Exit")
 
 def run_tool(choice):
     if choice == '1':
