@@ -23,7 +23,8 @@ def show_menu():
     print("3. LAN Port Scanner")
     print("4. Password Generator")
     print("5. SSL Certificate Checker")
-    print("6. Exit")
+    print("6. DNS Record Grabber")
+    print("q. Exit")
 
 def run_tool(choice):
     if choice == '1':
@@ -37,6 +38,8 @@ def run_tool(choice):
     elif choice == '5':
         os.system("python ToolX/SSL-certificate-checker/checker.py")
     elif choice == '6':
+        os.system("python ToolX/DNS-record-grabber/dns_record.py")
+    elif choice == 'q':
         print("\n[!] Exiting... Stay secure....")
         time.sleep(1)
         exit()
