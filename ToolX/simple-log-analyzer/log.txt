@@ -1,0 +1,32 @@
+2025-07-27 20:01:03 INFO Connection from 192.168.1.10 to port 443 successful
+2025-07-27 20:01:07 WARN Failed login attempt from 192.168.1.15 to port 22
+2025-07-27 20:01:10 INFO Connection from 10.0.0.5 to port 80 successful
+2025-07-27 20:01:15 ERROR Unauthorized access attempt from 192.168.1.15 to port 22
+2025-07-27 20:01:18 INFO Connection from 203.0.113.50 to port 8080
+2025-07-27 20:01:20 INFO Connection from 192.168.1.20 to port 443 successful
+2025-07-27 20:01:25 WARN Denied access from 198.51.100.32 to port 6667
+2025-07-27 20:01:30 INFO Connection from 192.168.1.10 to port 443 successful
+2025-07-27 20:01:35 ERROR Failed login from 192.168.1.15 to port 22
+2025-07-27 20:01:40 INFO Connection from 203.0.113.50 to port 8080
+2025-07-27 20:01:45 INFO Connection from 203.0.113.50 to port 8080
+2025-07-27 20:01:50 INFO Connection from 203.0.113.50 to port 8080
+2025-07-27 20:01:55 INFO Connection from 203.0.113.50 to port 8080
+2025-07-27 20:02:00 INFO Connection from 203.0.113.50 to port 8080
+2025-07-27 20:02:05 INFO Connection from 192.168.1.10 to port 443 successful
+2025-07-27 20:02:10 ERROR Failed login from 192.168.1.15 to port 22
+2025-07-27 20:01:03 INFO Connection from 192.168.1.10 to port 443 successful
+2025-07-27 20:01:07 WARN Failed login attempt from 192.168.1.15 to port 22
+2025-07-27 20:01:10 INFO Connection from 10.0.0.5 to port 80 successful
+2025-07-27 20:01:15 ERROR Unauthorized access attempt from 192.168.1.15 to port 22
+2025-07-27 20:01:18 INFO Connection from 203.0.113.50 to port 8080
+2025-07-27 20:01:20 INFO Connection from 192.168.1.20 to port 443 successful
+2025-07-27 20:01:25 WARN Denied access from 198.51.100.32 to port 6667
+2025-07-27 20:01:30 INFO Connection from 192.168.1.10 to port 443 successful
+2025-07-27 20:01:35 ERROR Failed login from 192.168.1.15 to port 22
+2025-07-27 20:01:40 INFO Connection from 203.0.113.50 to port 8080
+2025-07-27 20:01:45 INFO Connection from 203.0.113.50 to port 8080
+2025-07-27 20:01:50 INFO Connection from 203.0.113.50 to port 8080
+2025-07-27 20:01:55 INFO Connection from 203.0.113.50 to port 8080
+2025-07-27 20:02:00 INFO Connection from 203.0.113.50 to port 8080
+2025-07-27 20:02:05 INFO Connection from 192.168.1.10 to port 443 successful
+2025-07-27 20:02:10 ERROR Failed login from 192.168.1.15 to port 22
