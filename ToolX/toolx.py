@@ -26,6 +26,7 @@ def show_menu():
     print("6. DNS Record Grabber")
     print("7. Simple Log Analyzer")
     print("8. Payload Encoder")
+    print("9. Wordlist Generator")
     print("q. Exit")
 
 def run_tool(choice):
@@ -45,6 +46,8 @@ def run_tool(choice):
         os.system("python ToolX/simple-log-analyzer/analyzer.py")
     elif choice == '8':
         os.system("python ToolX/payload-encoder/encoder.py")
+    elif choice == '9':
+        os.system("python ToolX/wordlist-generator/word_gen.py")
     elif choice == 'q':
         print("\n[!] Exiting... Stay secure....")
         time.sleep(1)
@@ -57,6 +60,8 @@ if __name__ == '__main__':
         os.system('cls' if os.name == 'nt' else 'clear')
         banner()
         show_menu()
-        choice = input("\nEnter your choice [1-6]: ")
+        choice = input("\nEnter your choice: ")
         run_tool(choice)
         input("\n[Press Enter to return to menu...]")
+
+# ✓
