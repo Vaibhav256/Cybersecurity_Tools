@@ -5,7 +5,7 @@ import urllib.parse
 from collections import deque
 import re
 
-user_url = input('[+] Enter Target URL To Scan: ').strip()
+user_url = input('[+] Enter Target URL To Scan (eg. http or https://example.com): ').strip()
 urls = deque([user_url])
 
 scraped_urls = set()

@@ -28,7 +28,7 @@ def scan_port(ipaddress, port):
         print(termcolor.colored(f"[-] Error scanning port {port}: {e}", 'red'))
 
 # User Input
-targets = input("[*] Enter Targets to Scan(split them by ,): ")
+targets = input("[*] Enter Targets to Scan(comma-separated): ")
 ports = int(input("[*] Enter the number of ports to scan: "))
 
 # Scanning logic

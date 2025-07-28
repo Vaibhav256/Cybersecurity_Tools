@@ -58,7 +58,7 @@ def crack_hash(hash_to_crack, wordlist_path_input):
 
 # --- Main ---
 if __name__ == '__main__':
-    print("🔐 Simple Hash Cracker with Auto Detection\n")
+    print("--> Simple Hash Cracker with Auto Detection\n")
 
     hash_input = input("Enter the hash to crack: ").strip().lower()
     wordlist = input("Enter path to wordlist (e.g., rockyou.txt): ").strip()

