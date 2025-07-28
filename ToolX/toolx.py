@@ -18,6 +18,7 @@ def banner():
 
 def show_menu():
     print("\nSelect a tool to run:")
+    print("0. Subdomain Finder")
     print("1. Email Scraper")
     print("2. Hash Cracker")
     print("3. LAN Port Scanner")
@@ -30,7 +31,9 @@ def show_menu():
     print("q. Exit")
 
 def run_tool(choice):
-    if choice == '1':
+    if choice == '0':
+        os.system("python ToolX/subdomain-finder/sub_finder.py")
+    elif choice == '1':
         os.system("python ToolX/email-scraper/email_scraper.py")
     elif choice == '2':
         os.system("python ToolX/hash-cracker/hash_cracker.py")
@@ -64,4 +67,3 @@ if __name__ == '__main__':
         run_tool(choice)
         input("\n[Press Enter to return to menu...]")
 
-# ✓
