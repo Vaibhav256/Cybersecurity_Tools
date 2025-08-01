@@ -16,7 +16,6 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
 }
 
-# Filter out common non-HTTP schemes
 invalid_schemes = ['javascript:', 'mailto:', 'tel:', '#']
 
 try:
@@ -38,7 +37,6 @@ try:
         except (requests.exceptions.RequestException, requests.exceptions.MissingSchema):
             continue
 
-        # Extract and store emails
         new_emails = set(re.findall(r"[a-z0-9\.\-+_]+@[a-z0-9\.\-+_]+\.[a-z]+", response.text, re.I))
         emails.update(new_emails)
 
@@ -47,7 +45,6 @@ try:
         for anchor in soup.find_all("a", href=True):
             href = anchor['href'].strip()
 
-            # Skip invalid or JavaScript links
             if any(href.lower().startswith(scheme) for scheme in invalid_schemes):
                 continue
 
@@ -62,9 +59,9 @@ try:
                 urls.append(link)
 
 except KeyboardInterrupt:
-    print('[-] Interrupted. Closing!')
+    print('\n[-] Interrupted by user. Finalizing...')
 
-# Output found emails
-for mail in sorted(emails):
-    print("\n Gathered Emails : \n")
-    print(mail)
+finally:
+    print("\nGathered Emails:\n")
+    for mail in sorted(emails):
+        print(mail)
