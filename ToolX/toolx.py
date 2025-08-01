@@ -1,5 +1,6 @@
 import os
 import time
+import subprocess
 
 def banner():
     print(r'''
@@ -31,26 +32,27 @@ def show_menu():
     print("q. Exit")
 
 def run_tool(choice):
-    if choice == '0':
-        os.system("python ToolX/subdomain-finder/sub_finder.py")
-    elif choice == '1':
-        os.system("python ToolX/email-scraper/email_scraper.py")
-    elif choice == '2':
-        os.system("python ToolX/hash-cracker/hash_cracker.py")
-    elif choice == '3':
-        os.system("python ToolX/lan-portscanner/lan_portscanner.py")
-    elif choice == '4':
-        os.system("python ToolX/password-generator/password_generator.py")
-    elif choice == '5':
-        os.system("python ToolX/SSL-certificate-checker/checker.py")
-    elif choice == '6':
-        os.system("python ToolX/DNS-record-grabber/dns_record.py")
-    elif choice == '7':
-        os.system("python ToolX/simple-log-analyzer/analyzer.py")
-    elif choice == '8':
-        os.system("python ToolX/payload-encoder/encoder.py")
-    elif choice == '9':
-        os.system("python ToolX/wordlist-generator/word_gen.py")
+    tool_paths = {
+        '0': "ToolX/subdomain-finder/sub_finder.py",
+        '1': "ToolX/email-scraper/email_scraper.py",
+        '2': "ToolX/hash-cracker/hash_cracker.py",
+        '3': "ToolX/lan-portscanner/lan_portscanner.py",
+        '4': "ToolX/password-generator/password_generator.py",
+        '5': "ToolX/SSL-certificate-checker/checker.py",
+        '6': "ToolX/DNS-record-grabber/dns_record.py",
+        '7': "ToolX/simple-log-analyzer/analyzer.py",
+        '8': "ToolX/payload-encoder/encoder.py",
+        '9': "ToolX/wordlist-generator/word_gen.py"
+    }
+
+    if choice in tool_paths:
+        try:
+            subprocess.run(["python", tool_paths[choice]], check=True)
+        except KeyboardInterrupt:
+            print("\n[!] Tool interrupted by user. Returning to menu...")
+            time.sleep(1)
+        except subprocess.CalledProcessError as e:
+            print(f"\n[!] Tool exited with error code {e.returncode}")
     elif choice == 'q':
         print("\n[!] Exiting... Stay secure....")
         time.sleep(1)
