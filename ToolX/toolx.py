@@ -34,16 +34,16 @@ def show_menu():
 def run_tool(choice):
     base_dir = os.path.dirname(os.path.abspath(__file__))
     tool_paths = {
-        '0': os.path.join(base_dir, "ToolX", "subdomain-finder", "sub_finder.py"),
-        '1': os.path.join(base_dir, "ToolX", "email-scraper", "email_scraper.py"),
-        '2': os.path.join(base_dir, "ToolX", "hash-cracker", "hash_cracker.py"),
-        '3': os.path.join(base_dir, "ToolX", "lan-portscanner", "lan_portscanner.py"),
-        '4': os.path.join(base_dir, "ToolX", "password-generator", "password_generator.py"),
-        '5': os.path.join(base_dir, "ToolX", "SSL-certificate-checker", "checker.py"),
-        '6': os.path.join(base_dir, "ToolX", "DNS-record-grabber", "dns_record.py"),
-        '7': os.path.join(base_dir, "ToolX", "simple-log-analyzer", "analyzer.py"),
-        '8': os.path.join(base_dir, "ToolX", "payload-encoder", "encoder.py"),
-        '9': os.path.join(base_dir, "ToolX", "wordlist-generator", "word_gen.py")
+    '0': os.path.join(base_dir, "subdomain-finder", "sub_finder.py"),
+    '1': os.path.join(base_dir, "email-scraper", "email_scraper.py"),
+    '2': os.path.join(base_dir, "hash-cracker", "hash_cracker.py"),
+    '3': os.path.join(base_dir, "lan-portscanner", "lan_portscanner.py"),
+    '4': os.path.join(base_dir, "password-generator", "password_generator.py"),
+    '5': os.path.join(base_dir, "SSL-certificate-checker", "checker.py"),
+    '6': os.path.join(base_dir, "DNS-record-grabber", "dns_record.py"),
+    '7': os.path.join(base_dir, "simple-log-analyzer", "analyzer.py"),
+    '8': os.path.join(base_dir, "payload-encoder", "encoder.py"),
+    '9': os.path.join(base_dir, "wordlist-generator", "word_gen.py")
     }
 
     if choice in tool_paths:
